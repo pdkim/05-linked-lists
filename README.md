@@ -39,6 +39,9 @@
 * implement a Singly Linked List (SLL) data structure
 * implement `append(value)`, `prepend(value)`, `reverse()`, and `remove(offset)` methods to the SLL class
 * implement `serialize()` and `deserialize()` methods on the class
+	* To `serialize` means to convert an object to string form.
+	* To `deserialize` means to take the serialized string and convert to an object.
+	* Think JSON.stringify and JSON.parse but write your own instead! NOTE: JSON.parse wouldn't work as is anyway, why would that be?
 * in a comment within each function, note the it's Big-O runtime
 
 #### Rubric:
