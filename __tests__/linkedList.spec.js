@@ -1,21 +1,27 @@
 'use strict';
 
-const list = require('../lib/linkedList.js');
+const List = require('../lib/linkedList.js');
 
 describe('Linked lists', () => {
 
   //append
-  xit('should insert a new node to the end of the list', (done) => {
-    let expected = 0;
-    let actual = 0;
+  it('should insert a new node to the end of the list', (done) => {
+    let newList = new List;
+    newList.append(1);
+    newList.append(2);
+    let expected = 2;
+    let actual = newList.head.next.value;
     expect(actual).toEqual(expected);
     done();
   });
 
   //prepend
-  xit('should add new node at the start of the list', (done) => {
-    let actual = 0;
-    let expected = 0;
+  it('should add new node at the start of the list', (done) => {
+    let newList = new List;
+    newList.append(1);
+    newList.prepend(2);
+    let actual = newList.head.value;
+    let expected = 2;
     expect(actual).toEqual(expected);
     done();
   });
@@ -29,9 +35,14 @@ describe('Linked lists', () => {
   });
 
   //remove
-  xit('should remove the last node in the list', (done) => {
-    let actual = 0;
-    let expected = 0;
+  it('should remove the last node in the list', (done) => {
+    let newList = new List;
+    newList.append(1);
+    newList.append(2);
+    newList.append(3);
+    newList.remove();
+    let actual = newList.head.next.value;
+    let expected = 2;
     expect(actual).toEqual(expected);
     done();
   });
