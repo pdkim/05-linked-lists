@@ -1,4 +1,4 @@
-Travis: 
+Travis: [![Build Status](https://travis-ci.com/pdkim/05-linked-lists.svg?branch=linked-list)](https://travis-ci.com/pdkim/05-linked-lists)
 Github: https://github.com/pdkim/05-linked-lists 
 
 Feature: 
