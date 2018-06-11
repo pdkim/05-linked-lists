@@ -1,51 +1,18 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Linked List Data Structure
-====
+Travis: 
+Github: https://github.com/pdkim/05-linked-lists 
 
-## To Submit this Assignment
-  * Do all your work in a public repository called `data-structures-and-algorithms`
-  * write all of your code in a directory named `linked-lists`
-  * push to your repository
-  * submit a pull request to this repository
-  * submit a link to your PR in canvas
-  * write a question and observation on canvas
+Feature: 
+This application is a Single Linked List data structure that can append, prepend, reverse, and remove a node from a linked list.  In addition, the user is able to serialize a linked list into text format and deserialize text back into a linked list.
 
-## Requirements  
-#### Configuration  
-  <!-- list of files, configurations, tools, etc that are required -->
-  Your lab directory must include  
-  * **index.js** -- The entry point to your module
-  * **README.md** -- with a documentation about your lab
-  * **.gitignore** -- with a robust .gitignore
-  * **.eslintrc** -- with the class .eslintrc file
-  * **.eslintignore** -- with the class .eslintignore
-  * **.travis.yml** -- travis-ci instructions
-  * **.package.json** -- with all dependencies and dev-dependencies
-  * **lib/** -- directory for holding your programs helper modules
-  * **__tests__/** -- directory for holding your programs unit and integration tests
 
-#### Testing  
-  * write at least three test assertions for each method of the Singly Linked List Data Structure
-  * organize your tests into appropriate describe/it blocks for test output readability
-
-####  Documentation  
-  * in your README, write documentation for you data structures
-  * your documentation should includes code block useage examples
-  * provide instructions for:
-    * installing and using your data structure
-    * accessing each method
-    * running your tests
-
-#### Feature Tasks  
-* implement a Singly Linked List (SLL) data structure
-* implement `append(value)`, `prepend(value)`, `reverse()`, and `remove(offset)` methods to the SLL class
-* implement `serialize()` and `deserialize()` methods on the class
-	* To `serialize` means to convert an object to string form.
-	* To `deserialize` means to take the serialized string and convert to an object.
-	* Think JSON.stringify and JSON.parse but write your own instead! NOTE: JSON.parse wouldn't work as is anyway, why would that be?
-* in a comment within each function, note the it's Big-O runtime
-
-#### Rubric:
-  * Tests: 2pts
-  * Passes linter: 1pts
-  * Completed Data Structure: 5pts
-  * Big-O notation: 2pt
+Intructions:
+1. Fork the repository and clone the forked repo on your device.
+2. Setup a package JSON by entering 'npm init -y' in your terminal
+3. 'npm install' the following:
+  - eslint
+  - jest
+4. Ensure package.json includes the following in the scripts section:
+    "lint": "eslint **/*.js",
+    "test": "jest --verbose --coverage"
+5. enter npm test to run the test.
+6. Observe the tests pass with no linter errors.
