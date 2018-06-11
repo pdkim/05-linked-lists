@@ -13,7 +13,7 @@ describe('Linked lists', () => {
   });
 
   //prepend
-  xit('should add new node before specific node', (done) => {
+  xit('should add new node at the start of the list', (done) => {
     let actual = 0;
     let expected = 0;
     expect(actual).toEqual(expected);
@@ -28,8 +28,16 @@ describe('Linked lists', () => {
     done();
   });
 
+  //remove
+  xit('should remove the last node in the list', (done) => {
+    let actual = 0;
+    let expected = 0;
+    expect(actual).toEqual(expected);
+    done();
+  });
+
   //serialize
-  xit('should return a linked list in reverse order of the previous one', (done) => {
+  xit('should convert the linked list object into a text', (done) => {
     let actual = 0;
     let expected = 0;
     expect(actual).toEqual(expected);
@@ -37,7 +45,7 @@ describe('Linked lists', () => {
   });
 
   //deserialize
-  xit('should return a linked list in reverse order of the previous one', (done) => {
+  xit('should convert text into a new linked list', (done) => {
     let actual = 0;
     let expected = 0;
     expect(actual).toEqual(expected);
