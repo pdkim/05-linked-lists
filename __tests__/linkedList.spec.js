@@ -27,9 +27,15 @@ describe('Linked lists', () => {
   });
   
   //reverse
-  xit('should return a linked list in reverse order of the previous one', (done) => {
-    let actual = 0;
-    let expected = 0;
+  it('should return a linked list in reverse order of the previous one', (done) => {
+    let newList = new List;
+    newList.append(1);
+    newList.append(2);
+    newList.append(3);
+    newList.reverse();
+    console.log(newList);
+    let actual = newList.head.value;
+    let expected = 3;
     expect(actual).toEqual(expected);
     done();
   });
@@ -48,17 +54,24 @@ describe('Linked lists', () => {
   });
 
   //serialize
-  xit('should convert the linked list object into a text', (done) => {
-    let actual = 0;
-    let expected = 0;
+  it('should convert the linked list object into a text', (done) => {
+    let newList = new List;
+    newList.append(1);
+    newList.append(2);
+    newList.append(3);
+    console.log(newList);
+    let actual = newList.serialize();
+    let expected = '1 -> 2 -> 3 -> X';
     expect(actual).toEqual(expected);
     done();
   });
 
   //deserialize
-  xit('should convert text into a new linked list', (done) => {
-    let actual = 0;
-    let expected = 0;
+  it('should convert text into a new linked list', (done) => {
+    let newList = new List;
+    newList.deserilize('1 2 3');
+    let actual = newList.head.value;
+    let expected = '1';
     expect(actual).toEqual(expected);
     done();
   });
